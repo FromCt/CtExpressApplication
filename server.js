@@ -13,7 +13,11 @@ app.get('/getData',function(req,res){
     res.send('this is get data');
 });
 
-//将public 目录下的文件 托管给 express 通过http://localhost:3000/fileName 可自己访问
+//express http://localhost:3000/fileName
 app.use(express.static('public'));
 app.use(express.static('valentine'));
-app.listen(3000);
+try{
+    app.listen(3000);
+}catch(e){
+    console.log(e);
+}
