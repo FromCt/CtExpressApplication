@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>情人节</title>
+    <link href="css/index_demo.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="js/jq.transition.js"></script>
+    <script src="js/walkBoy.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("hello world");
+            var width = $(".content").width();
+            var height = $(".content").height();
+            console.log(width + "===height==" + height);
+
+            var ul = $(".content ul");
+
+            //获取 走路y 路线
+            var top = $('.body').height();
+            var pathY = $('li:eq(0) .mid_background').position().top + $('li:eq(0) .mid_background').height() / 2;
+            console.log( pathY);
+            var boy_h = $('.boy').height();
+            var lineh=pathY - boy_h + 20;
+            console.log(boy_h);
+            $('.boy').css({
+                'top': lineh+ 'px',
+            });
+//            console.log("pathY===" + (pathY - boy_h));
+
+            var boy = Boy();
+
+
+
+            var width = $(".content").width();
+            var height = $(".content").height();
+
+            $('.flower_content').css({
+                'visibility':'hidden'
+            });
+
+
+            boy.goRight(0.2 * width, 1000)
+                    .then(function () {
+                       return boy.backgroundGo(width, 1000);
+                    })
+                    .then(function () {
+                        return boy.goRight(width * 0.52, 1000);
+                    }).then(function(){
+                       return boy.goToStore();
+                    }).then(function(){
+                       return boy.outStore();
+                    }).then(function(){
+                        boy.goRight(width * 0.2, 1000);
+//                        $('.girl').css({
+//                            'left': ''+width * 0.35+"px",
+//                            'top':''+lineh-boy_h*0.3+"px"
+//                        });
+                        return boy.backgroundGo(2*width, 1000);
+                    }).then(function(){
+                        return boy.goUp(width * 0.39,lineh-boy_h*0.28,1000);
+                    }).then(function(){
+
+                        $('.boy').css({
+                           'animation-play-state':'paused'
+                        });
+
+
+                        $('.girl').css({
+                            'animation': 'girl_move1 1s forwards ',
+                            'animation-timing-function':' steps(3)'
+                        });
+
+                        $('.boy').css({
+                            'animation': 'boy_move3 1s forwards ',
+                            'animation-timing-function':' steps(2)',
+                            'animation-play-state':'running'
+                        });
+
+
+                        $('.flower_content').css({
+                            'visibility':'visible'
+                        });
+                        //return boy.stopWalk();
+                        var spans=$('.flower_content  span');
+                        for(var i=0;i<spans.length;i++){
+                            $(spans[i]).css({
+                                "transition": 'all 10s',
+                                'opacity': '0.4',
+                                'transform':'translateY(1000px)'
+                            });
+                        }
+
+                    }).then(function(){
+
+
+
+                    });
+
+//            animation1().then(function(){
+//                return animation2();
+//            }).then(function(){
+//                //走到花店停止动画
+//                $('.boy').addClass("pauseWalk");
+//            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="content">
+    <ul>
+        <li>
+            <div class="top_background">
+            </div>
+            <div class="mid_background">
+            </div>
+            <div class="bottom_background">
+            </div>
+        </li>
+        <li>
+            <div class="center">
+            </div>
+        </li>
+        <li>
+            <div class="top_background">
+            </div>
+            <div class="mid_background">
+            </div>
+            <div class="bottom_background">
+            </div>
+
+
+            <div class="girl">
+            </div>
+        </li>
+    </ul>
+
+    <div class="boy"></div>
+</div>
+<div class="flower_content">
+
+    <div class="content1">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+    <div class="content2">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+
+    <div class="content3">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+
+    <div class="content4">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+
+    </div>
+    <!--20-->
+
+
+    
+</div>
+
+</body>
+</html>

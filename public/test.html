@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            height: 100%;
+            width: 100%;
+        }
+
+        button {
+            display: block;
+            position: fixed;
+            bottom: 50%;
+            left: 10%;
+            width: 80%;
+            height: 50px;
+            background: deepskyblue;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+
+    <button>支付成功 3s后跳转</button>
+
+<script>
+    var button = document.querySelector("button");
+    var time=3;
+
+   var interval= setInterval(function(){
+       button.innerHTML="支付成功 "+(time--)+"s后跳转";
+       console.log(time);
+       if(time<0){
+           clearInterval(interval);
+           tradefinish.getOrderId("js调用了android中的hello方法");
+       }
+    },1000)
+
+    button.addEventListener("click",function(){
+        clearInterval(interval);
+        tradefinish.getOrderId("js调用了android中的hello方法");
+    })
+
+</script>
+
+</body>
+</html>

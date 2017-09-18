@@ -1,0 +1,2 @@
+this is note for public
+1、该文件 通过中间件托管给了 express.static

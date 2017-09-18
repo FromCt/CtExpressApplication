@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+body .content {
+  background: pink;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+body .content ul {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+body .content ul li {
+  flex: 1;
+  height: 100%;
+}
+body .content ul li .top_background {
+  width: 100%;
+  height: 71.6%;
+  background-image: url('../imgs/background/a_background_top.png');
+  background-size: 100% 100%;
+}
+body .content ul li .mid_background {
+  width: 100%;
+  height: 13.1%;
+  background-image: url('../imgs/background/a_background_middle.png');
+  background-size: 100% 100%;
+}
+body .content ul li .bottom_background {
+  width: 100%;
+  height: 15.3%;
+  background-image: url('../imgs/background/a_background_botton.png');
+  background-size: 100% 100%;
+}
+body .content ul li:nth-child(2) {
+  background: blanchedalmond;
+}
+body .content ul li:nth-child(2) .center {
+  background-image: url("../imgs/QixiB-bright.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+body .content ul li:nth-child(3) {
+  background: palegreen;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body .content ul li:nth-child(3) .girl {
+  position: absolute;
+  width: 150px;
+  height: 291px;
+  left: 50%;
+  top: 50%;
+  margin-top: -185px;
+  background: url("../imgs/girl.png") -150px top;
+}
+body .content ul li:nth-child(3) .top_background {
+  width: 100%;
+  height: 71.6%;
+  background-image: url('../imgs/background/c_background_top.png');
+  background-size: 100% 100%;
+}
+body .content ul li:nth-child(3) .mid_background {
+  width: 100%;
+  height: 13.1%;
+  background-image: url('../imgs/background/c_background_middle.png');
+  background-size: 100% 100%;
+}
+body .content ul li:nth-child(3) .bottom_background {
+  width: 100%;
+  height: 15.3%;
+  background-image: url('../imgs/background/c_background_botton.png');
+  background-size: 100% 100%;
+}
+body .content .boy {
+  width: 151px;
+  height: 291px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../imgs/boy.png");
+  animation: boy_move1 0.5s infinite;
+  background-repeat: no-repeat;
+  background-size: 700% 200%;
+  animation-timing-function: steps(2);
+}
+body .content .pauseWalk {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  animation-play-state: paused;
+}
+body .flower_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body .flower_content .content1 {
+  margin-left: -100px;
+  height: 40px;
+  width: 160%;
+  position: relative;
+}
+body .flower_content .content1 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  top: 10px;
+}
+body .flower_content .content1 span:nth-child(1) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 5%;
+}
+body .flower_content .content1 span:nth-child(2) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 10%;
+}
+body .flower_content .content1 span:nth-child(3) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 20%;
+}
+body .flower_content .content1 span:nth-child(4) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 30%;
+}
+body .flower_content .content1 span:nth-child(5) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 40%;
+}
+body .flower_content .content1 span:nth-child(6) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 50%;
+}
+body .flower_content .content1 span:nth-child(7) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 60%;
+}
+body .flower_content .content1 span:nth-child(8) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 70%;
+}
+body .flower_content .content1 span:nth-child(9) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 80%;
+}
+body .flower_content .content1 span:nth-child(10) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 90%;
+}
+body .flower_content .content1 span:nth-child(11) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 56%;
+}
+body .flower_content .content1 span:nth-child(12) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 64%;
+}
+body .flower_content .content1 span:nth-child(13) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 74%;
+}
+body .flower_content .content1 span:nth-child(14) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 84%;
+}
+body .flower_content .content1 span:nth-child(15) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 95%;
+}
+body .flower_content .content1 span:nth-child(16) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 54%;
+}
+body .flower_content .content1 span:nth-child(17) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 64%;
+}
+body .flower_content .content1 span:nth-child(18) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 74%;
+}
+body .flower_content .content1 span:nth-child(19) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 84%;
+}
+body .flower_content .content1 span:nth-child(20) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 95%;
+}
+body .flower_content .content2 {
+  width: 160%;
+  height: 40px;
+  position: relative;
+}
+body .flower_content .content2 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  top: 40px;
+}
+body .flower_content .content2 span:nth-child(1) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 5%;
+}
+body .flower_content .content2 span:nth-child(2) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 10%;
+}
+body .flower_content .content2 span:nth-child(3) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 20%;
+}
+body .flower_content .content2 span:nth-child(4) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 30%;
+}
+body .flower_content .content2 span:nth-child(5) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 40%;
+}
+body .flower_content .content2 span:nth-child(6) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 50%;
+}
+body .flower_content .content2 span:nth-child(7) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 60%;
+}
+body .flower_content .content2 span:nth-child(8) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 70%;
+}
+body .flower_content .content2 span:nth-child(9) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 80%;
+}
+body .flower_content .content2 span:nth-child(10) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 90%;
+}
+body .flower_content .content2 span:nth-child(11) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 56%;
+}
+body .flower_content .content2 span:nth-child(12) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 64%;
+}
+body .flower_content .content2 span:nth-child(13) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 74%;
+}
+body .flower_content .content2 span:nth-child(14) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 84%;
+}
+body .flower_content .content2 span:nth-child(15) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 95%;
+}
+body .flower_content .content2 span:nth-child(16) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 54%;
+}
+body .flower_content .content2 span:nth-child(17) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 64%;
+}
+body .flower_content .content2 span:nth-child(18) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 74%;
+}
+body .flower_content .content2 span:nth-child(19) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 84%;
+}
+body .flower_content .content2 span:nth-child(20) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 95%;
+}
+body .flower_content .content3 {
+  margin-left: -60px;
+  width: 140%;
+  height: 40px;
+  position: relative;
+}
+body .flower_content .content3 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  top: 60px;
+}
+body .flower_content .content3 span:nth-child(1) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 5%;
+}
+body .flower_content .content3 span:nth-child(2) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 10%;
+}
+body .flower_content .content3 span:nth-child(3) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 20%;
+}
+body .flower_content .content3 span:nth-child(4) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 30%;
+}
+body .flower_content .content3 span:nth-child(5) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 40%;
+}
+body .flower_content .content3 span:nth-child(6) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 50%;
+}
+body .flower_content .content3 span:nth-child(7) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 60%;
+}
+body .flower_content .content3 span:nth-child(8) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 70%;
+}
+body .flower_content .content3 span:nth-child(9) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 80%;
+}
+body .flower_content .content3 span:nth-child(10) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 90%;
+}
+body .flower_content .content3 span:nth-child(11) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 56%;
+}
+body .flower_content .content3 span:nth-child(12) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 64%;
+}
+body .flower_content .content3 span:nth-child(13) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 74%;
+}
+body .flower_content .content3 span:nth-child(14) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 84%;
+}
+body .flower_content .content3 span:nth-child(15) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 95%;
+}
+body .flower_content .content3 span:nth-child(16) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 54%;
+}
+body .flower_content .content3 span:nth-child(17) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 64%;
+}
+body .flower_content .content3 span:nth-child(18) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 74%;
+}
+body .flower_content .content3 span:nth-child(19) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 84%;
+}
+body .flower_content .content3 span:nth-child(20) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 95%;
+}
+body .flower_content .content4 {
+  margin-left: -90px;
+  width: 120%;
+  height: 40px;
+  position: relative;
+}
+body .flower_content .content4 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  top: 80px;
+}
+body .flower_content .content4 span:nth-child(1) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 5%;
+}
+body .flower_content .content4 span:nth-child(2) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 10%;
+}
+body .flower_content .content4 span:nth-child(3) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 20%;
+}
+body .flower_content .content4 span:nth-child(4) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 30%;
+}
+body .flower_content .content4 span:nth-child(5) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 40%;
+}
+body .flower_content .content4 span:nth-child(6) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 50%;
+}
+body .flower_content .content4 span:nth-child(7) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 60%;
+}
+body .flower_content .content4 span:nth-child(8) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 70%;
+}
+body .flower_content .content4 span:nth-child(9) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 80%;
+}
+body .flower_content .content4 span:nth-child(10) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 90%;
+}
+body .flower_content .content4 span:nth-child(11) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 56%;
+}
+body .flower_content .content4 span:nth-child(12) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 64%;
+}
+body .flower_content .content4 span:nth-child(13) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 74%;
+}
+body .flower_content .content4 span:nth-child(14) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 84%;
+}
+body .flower_content .content4 span:nth-child(15) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 95%;
+}
+body .flower_content .content4 span:nth-child(16) {
+  background: url("../imgs/snowflake/snowflake4.png");
+  left: 54%;
+}
+body .flower_content .content4 span:nth-child(17) {
+  background: url("../imgs/snowflake/snowflake5.png");
+  left: 64%;
+}
+body .flower_content .content4 span:nth-child(18) {
+  background: url("../imgs/snowflake/snowflake1.png");
+  left: 74%;
+}
+body .flower_content .content4 span:nth-child(19) {
+  background: url("../imgs/snowflake/snowflake2.png");
+  left: 84%;
+}
+body .flower_content .content4 span:nth-child(20) {
+  background: url("../imgs/snowflake/snowflake3.png");
+  left: 95%;
+}
+@keyframes boy_move1 {
+  0% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: -300px bottom;
+  }
+}
+@keyframes boy_move2 {
+  0% {
+    background-position: right top;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+@keyframes boy_move3 {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: -600px bottom;
+  }
+}
+/* -150px top;*/
+@keyframes girl_move1 {
+  0% {
+    background-position: -150px top;
+  }
+  100% {
+    background-position: -600px top;
+  }
+}
