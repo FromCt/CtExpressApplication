@@ -17,7 +17,7 @@ app.get('/getData',function(req,res){
 app.use(express.static('public'));
 app.use(express.static('valentine'));
 try{
-    app.listen(3000);
+    app.listen(3300);
 }catch(e){
     console.log(e);
 }
